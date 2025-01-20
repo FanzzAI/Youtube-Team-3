@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #181818;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .sidebar .menu a,
+  .sidebar .explore a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .sidebar .menu a:hover,
+  .sidebar .explore a:hover {
+    color: white;
+  }
+  
+  .sidebar .explore {
+    margin-top: 40px;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .video {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .video:hover {
+    transform: scale(1.05);
+  }
+  
+  .video img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .video-details {
+    padding: 10px;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .views,
+  .time {
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  .views {
+    margin-top: 5px;
+  }
+  
+  .search-input::placeholder {
+    color: #aaa;
+  }
+  
